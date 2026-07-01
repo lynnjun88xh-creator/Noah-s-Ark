@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noah's Ark - 星河冲刺</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hero-panel" aria-labelledby="game-title">
+        <p class="eyebrow">Noah's Ark · First Project</p>
+        <h1 id="game-title">星河冲刺</h1>
+        <p class="intro">
+          驾驶方舟穿过霓虹流星雨，收集能量晶体，躲开高速陨石。坚持越久，速度越快！
+        </p>
+        <div class="stats" aria-label="游戏数据">
+          <div><span id="score">0</span><small>得分</small></div>
+          <div><span id="best-score">0</span><small>最佳</small></div>
+          <div><span id="speed">1x</span><small>速度</small></div>
+        </div>
+        <div class="controls">
+          <button id="start-button" type="button">开始游戏</button>
+          <p>操作：← → 或 A / D 移动，空格暂停。</p>
+        </div>
+      </section>
+
+      <section class="canvas-card" aria-label="星河冲刺游戏区域">
+        <canvas id="game" width="480" height="640"></canvas>
+        <div id="overlay" class="overlay">
+          <strong>准备起飞</strong>
+          <span>点击开始，进入动感星河。</span>
+        </div>
+      </section>
+    </main>
+    <script src="src/game.js"></script>
+  </body>
+</html>
