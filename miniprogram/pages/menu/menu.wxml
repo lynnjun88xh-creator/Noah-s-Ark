@@ -1,0 +1,21 @@
+<view class="store card">
+  <view class="store-name">方舟餐厅</view>
+  <view class="muted">扫码点餐 · 快速出餐 · 后厨实时接单</view>
+</view>
+<view class="layout">
+  <scroll-view class="categories" scroll-y>
+    <view wx:for="{{categories}}" wx:key="id" class="category {{activeCategoryId === item.id ? 'active' : ''}}" data-id="{{item.id}}" bindtap="switchCategory">{{item.name}}</view>
+  </scroll-view>
+  <scroll-view class="dishes" scroll-y>
+    <view wx:if="{{loading}}" class="card muted">菜单加载中...</view>
+    <view wx:for="{{dishes}}" wx:key="id" wx:if="{{item.categoryId === activeCategoryId}}" class="dish card">
+      <image class="dish-image" src="{{item.imageUrl}}" mode="aspectFill" />
+      <view class="dish-info">
+        <view class="dish-name">{{item.name}}</view>
+        <view class="muted">月售 {{item.monthlySales}} · {{item.description}}</view>
+        <view class="price">¥{{item.price}}</view>
+      </view>
+      <button class="add" data-id="{{item.id}}" bindtap="addToCart">+</button>
+    </view>
+  </scroll-view>
+</view>

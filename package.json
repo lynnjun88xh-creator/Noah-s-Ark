@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "node --check src/game.js"
+    "test": "node --check src/game.js && node -e \"require('fs').accessSync('miniprogram/app.json'); JSON.parse(require('fs').readFileSync('miniprogram/app.json','utf8'))\""
   },
   "devDependencies": {}
 }

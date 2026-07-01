@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/menu/menu",
+    "pages/cart/cart",
+    "pages/orders/orders"
+  ],
+  "window": {
+    "navigationBarTitleText": "方舟餐厅",
+    "navigationBarBackgroundColor": "#ff7a1a",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#697586",
+    "selectedColor": "#ff7a1a",
+    "list": [
+      { "pagePath": "pages/menu/menu", "text": "点餐" },
+      { "pagePath": "pages/cart/cart", "text": "购物车" },
+      { "pagePath": "pages/orders/orders", "text": "订单" }
+    ]
+  }
+}
