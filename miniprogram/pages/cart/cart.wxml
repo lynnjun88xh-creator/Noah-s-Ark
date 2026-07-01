@@ -1,0 +1,16 @@
+<view class="card">
+  <view class="title">购物车</view>
+  <view wx:if="{{!items.length}}" class="muted empty">还没有选择菜品</view>
+  <view wx:for="{{items}}" wx:key="dishId" class="cart-item">
+    <view>
+      <view class="name">{{item.name}}</view>
+      <view class="muted">x {{item.quantity}}</view>
+    </view>
+    <view class="price">¥{{item.price * item.quantity}}</view>
+  </view>
+  <textarea class="remark" placeholder="口味、忌口等备注" bindinput="onRemarkInput" />
+</view>
+<view class="checkout">
+  <view>合计 <text class="price">¥{{totalAmount}}</text></view>
+  <button class="primary-button" bindtap="submitOrder">提交订单</button>
+</view>

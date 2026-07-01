@@ -1,0 +1,6 @@
+<view wx:for="{{orders}}" wx:key="orderNo" class="card order {{highlightedOrderNo === item.orderNo ? 'highlight' : ''}}">
+  <view class="row"><text class="order-no">{{item.orderNo}}</text><text>{{item.statusText}}</text></view>
+  <view class="muted">桌号 {{item.tableNo}} · {{item.createdAt}}</view>
+  <view class="price">¥{{item.totalAmount}}</view>
+</view>
+<view wx:if="{{!orders.length}}" class="card muted empty">暂无订单</view>

@@ -1,0 +1,7 @@
+.title { font-size: 40rpx; font-weight: 800; margin-bottom: 20rpx; }
+.empty { text-align: center; padding: 80rpx 0; }
+.cart-item { display: flex; justify-content: space-between; padding: 24rpx 0; border-bottom: 1rpx solid #eef0f3; }
+.name { font-weight: 700; }
+.remark { width: 100%; min-height: 150rpx; margin-top: 28rpx; padding: 22rpx; border-radius: 18rpx; background: #f7f8fa; }
+.checkout { position: fixed; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: space-between; padding: 22rpx 28rpx; background: #fff; box-shadow: 0 -10rpx 30rpx rgba(31,41,51,.08); }
+.checkout button { width: 240rpx; margin: 0; }

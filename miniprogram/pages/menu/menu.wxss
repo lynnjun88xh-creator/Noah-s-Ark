@@ -1,0 +1,11 @@
+.store-name { font-size: 42rpx; font-weight: 800; margin-bottom: 10rpx; }
+.layout { display: flex; height: calc(100vh - 190rpx); }
+.categories { width: 180rpx; background: #f0f2f5; }
+.category { padding: 34rpx 20rpx; color: #697586; font-weight: 600; }
+.category.active { color: #ff7a1a; background: #fff; }
+.dishes { flex: 1; }
+.dish { display: flex; align-items: center; gap: 20rpx; }
+.dish-image { width: 132rpx; height: 132rpx; border-radius: 20rpx; background: #fff3e4; }
+.dish-info { flex: 1; }
+.dish-name { font-size: 32rpx; font-weight: 800; }
+.add { width: 58rpx; height: 58rpx; line-height: 58rpx; padding: 0; border-radius: 50%; color: #fff; background: #ff7a1a; }
